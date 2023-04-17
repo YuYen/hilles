@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+message CaptureResponse {
+    bytes color_image = 1;
+    bytes depth_image = 2;
+    bytes ir_image = 3;
+    double capturedEpochTimeMilliSeconds = 4;
+}
+
+message BodyResponse {
+    repeated Body bodys = 1;
+    double capturedEpochTimeMilliSeconds = 2;
+}
+
+message Body {
+    int32 id = 1;
+    // marshalled skeleton struct
+    bytes skeleton = 2;
+}
+
+message YoloRequest{
+    repeated int32 cocoIds = 1;
+}
+
+message YoloResponse{
+    repeated CocoObject predictions = 1;
+    double capturedEpochTimeMilliSeconds = 2;
+}
+
+message CocoObject{
+    int32 id = 1;
+    float score = 2;
+    // bounding box for the target
+    float x = 3;
+    float y = 4;
+    float width = 5;
+    float height = 6;
+}
+
+message ImuSampleResponse{
+    // marshalled ImuSample struct
+    bytes imuSample = 1;
+}
+
+message DeviceConfigResponse{
+    bytes deviceConfiguration = 1;
+    bytes calibration = 2;
+}
+
+message EmptyRequest{}

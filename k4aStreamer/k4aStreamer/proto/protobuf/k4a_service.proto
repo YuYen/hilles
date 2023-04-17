@@ -1,0 +1,12 @@
+
+syntax = "proto3";
+
+import "marshal/k4a.proto";
+
+service K4aService {
+    rpc GetCapture (EmptyRequest) returns (stream CaptureResponse);
+    rpc GetBodyResponse (EmptyRequest) returns (stream BodyResponse);
+    rpc GetYoloResponse (YoloRequest) returns (stream YoloResponse);
+    rpc GetImuSample (EmptyRequest) returns (ImuSampleResponse);
+    rpc GetDeviceConfig (EmptyRequest) returns (DeviceConfigResponse);
+}
