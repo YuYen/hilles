@@ -28,12 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Update="Assets\Weights\yolov5n.onnx">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="Assets\Weights\yolov5n6.onnx">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <None Update="Assets\Weights\yolov5s.onnx">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
