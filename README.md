@@ -15,7 +15,7 @@
 
 #### Steps
 1. turn on NTP server (run runNtp.bat as administrator) 
-2. download object detection model [yolov5s.onnx](https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s.onnx) to k4aStreamer/Assets/Weights/
+2. download object detection model [yolov5s.onnx v6.0](https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5s.onnx) to k4aStreamer/Assets/Weights/
 3. build the .Net project - k4aStreamer
 4. connect the Kinect Azure camera to the laptop
 5. run the k4aStreamer service : the service will wait for connection from game engine.
