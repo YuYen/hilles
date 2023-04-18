@@ -1,1 +1,1 @@
-Folder for yolov5.onnx model
+Folder for yolov5s.onnx model
